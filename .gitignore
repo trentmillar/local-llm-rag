@@ -1,0 +1,185 @@
+# Logs
+*.log
+ollama.log
+logs/
+*.log.*
+
+# Ollama specific
+.ollama/
+ollama_data/
+models/
+*.gguf
+*.bin
+*.safetensors
+
+# Docker
+.docker/
+docker-compose.override.yml
+.dockerignore
+
+# Open WebUI data
+open-webui-data/
+open_webui_data/
+
+# Python (if you add Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Node.js (if you add any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache directories
+.cache/
+cache/
+.npm/
+.yarn/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Model downloads and data
+downloads/
+data/
+datasets/
+embeddings/
+vector_stores/
+chroma_db/
+faiss_index/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# RAG specific
+documents/
+uploads/
+processed_docs/
+chunks/
+indexes/
+
+# API keys and secrets
+secrets.json
+config.json
+api_keys.txt
+.secrets/
+
+# Local development
+local/
+dev/
+test_data/
+sample_data/
+
+# Large files that shouldn't be in git
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.dmg
+*.iso
+
+# Model checkpoints and weights
+checkpoints/
+weights/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# Hugging Face cache
+.cache/huggingface/
+transformers_cache/
+
+# LangChain cache
+.langchain/
+
+# Vector database files
+*.faiss
+*.pkl
+*.index
+chroma.sqlite3
