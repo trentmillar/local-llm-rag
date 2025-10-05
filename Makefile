@@ -181,6 +181,10 @@ start-webui:
 	@echo "Starting Open WebUI container..."
 	@if docker ps -q -f name=open-webui | grep -q .; then \
 		echo "Open WebUI is already running"; \
+	elif docker ps -aq -f name=open-webui | grep -q .; then \
+		echo "Found existing Open WebUI container, starting it..."; \
+		docker start open-webui >/dev/null; \
+		echo "Open WebUI started at http://localhost:3000"; \
 	else \
 		docker run -d -p 3000:8080 \
 			--add-host=host.docker.internal:host-gateway \
